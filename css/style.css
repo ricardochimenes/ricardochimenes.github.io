@@ -791,17 +791,17 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0;
 }
 #fh5co-started .fh5co-heading h2 {
-  color: #fff;
+  color: #000;
   margin-bottom: 20px !important;
 }
 #fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #4d4d4d;
 }
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #fff;
-  color: #0b8dcc;
+  background: #0b8dcc;
+  color: #fff;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
