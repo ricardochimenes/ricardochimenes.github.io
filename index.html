@@ -478,22 +478,32 @@
 		</div>
 	</div>
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
+	<!-- <div id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Work</h2>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
+			</div> -->
+
+			<!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+			<!-- <div class="row">
+				<div class="col-md-3 text-center col-padding animate-box"> -->
+					<!-- <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a> -->
+					<!-- <a tabindex="0" role="button" data-toggle="popover" title="Dismissible popover" data-container="body" data-content="And here's some amazing content. It's very engaging. Right?" class="work" style="background-image: url(images/portfolio-1.jpg);"> -->
+						<!-- <a onclick="myFunction()" class="work" style="background-image: url(images/portfolio-1.jpg);">
 						<div class="desc">
 							<h3>Project Name</h3>
 							<span>Illustration</span>
 						</div>
-					</a>
-				</div>
+					</a> -->
+					
+					<!-- <div id = "test" class = "collapse col-md-8 text-center row">
+						<div class="row">
+            			<p>We have learning content on Java, PHP, Ruby, C, C++, etc.</p>
+            		</div>
+        			</div> -->
+         		<!-- </div>         		
 				<div class="col-md-3 text-center col-padding animate-box">
 					<a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
 						<div class="desc">
@@ -552,7 +562,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- <div id="fh5co-blog">
 		<div class="container">
@@ -631,7 +641,7 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="#">
+			<form action="mailto:ricardodavidchimenes@hotmail.com" method="post" enctype="text/plain">
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
@@ -657,7 +667,7 @@
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Let me know what you need and we can make it happen!"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
@@ -685,6 +695,10 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
 	
+	<!-- Popper -->
+	<script src="js/popper.js"></script>
+	<!-- Tooltip -->
+	<script src="js/tooltip.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -703,6 +717,31 @@
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script type="text/javascript">	
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+
+	  $('.popover-dismiss').popover({
+		  trigger: 'focus'
+		})
+	  $('.example-popover').popover({
+	    container: 'body'
+	  })
+	})	
+		
+	</script>
+
+	<script type="text/javascript">
+		function myFunction() {
+		  var x = document.getElementById("myDIV");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		}
+	</script>
 
 	</body>
 </html>
