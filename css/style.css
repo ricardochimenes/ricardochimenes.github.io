@@ -856,7 +856,7 @@ figure {
 @media screen and (max-width: 768px) {
     .work .desc {
         opacity: 1;
-        background: rgba(255, 255, 255, 0.6);
+        background: #000000db;
     }
     .work .desc h3 {
         -webkit-transform: translate3d(0, 0, 0);
@@ -1491,6 +1491,11 @@ input[type="text"] {
 
 .visible {
     display: block;
+}
+
+.demo,
+.demo:hover {
+    color: #fff;
 }
 
 
